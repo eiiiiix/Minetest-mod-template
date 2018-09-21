@@ -1,0 +1,78 @@
+--Tool/weapon
+--minetest.register_tool(":", {
+--	description = "",
+--	inventory_image = ".png",
+--	tool_capabilities = {
+--		full_punch_interval = 1.0,
+--		max_drop_level=0,
+--		groupcaps={
+--			cracky = {times={[1]=1.00, [2]=1.00, [3]=1.00}, uses=10, maxlevel=3},
+--			crumbly = {times={[1]=1.00, [2]=1.00, [3]=1.00}, uses=10, maxlevel=3},
+--			snappy = {times={[1]=1.00, [2]=1.00, [3]=1.00}, uses=10, maxlevel=3},
+--			choppy = {times={[1]=1.00, [2]=1.00, [3]=1.00}, uses=10, maxlevel=3},
+--			explody = {times={[1]=1.00, [2]=1.00, [3]=1.00}, uses=10, maxlevel=3},
+--			oddly_breakable_by_hand = {times={[1]=1.00, [2]=1.00, [3]=1.00}, uses=10, maxlevel=3},
+--			fleshy = {times={[1]=1.00, [2]=1.00, [3]=1.00}, uses=10, maxlevel=3},
+--		},
+--		damage_groups = {fleshy=0},
+--	},
+--	sound = {breaks = "default_tool_breaks"},
+--	groups = {flammable = 0},
+--})
+
+--Block
+--minetest.register_node(":", {
+--    description = "",
+--    light_source = 0,
+--    tiles = {".png"},
+--    groups = {cracky=3, crumbly=3, snappy=3, choppy=3, explody=3, oddly_breakable_by_hand=3, fleshy=3},
+--    on_use = minetest.item_eat(0)
+--})
+
+--Crafting
+--minetest.register_craft({
+--    type = "shaped",
+--    output = ": X",
+--    recipe = {
+--        {":", ":", ":"},
+--        {":", ":", ":"},
+--        {":", ":", ":"}
+--    }
+--})
+
+--Cooking
+--minetest.register_craft({
+--    type = "cooking",
+--    output = ":",
+--    recipe = ":",
+--    cooktime = 10,
+--})
+
+--Non cube block
+--minetest.register_node(":", {
+--	description = "",
+--	drawtype = "mesh",
+--	mesh = ".obj",
+--	tiles = {".png"},
+--    groups = {cracky=3, crumbly=3, snappy=3, choppy=3, explody=3, oddly_breakable_by_hand=3, fleshy=3},
+--    on_use = minetest.item_eat(0)
+--})
+
+--Text command
+--minetest.register_chatcommand("eix", {
+--    func = function(name, param)
+--        return true, "Join Eix's Minetest Mods Discord server! https://discord.gg/V3Ymknj!"
+--    end
+--})
+
+--Function command
+--minetest.register_chatcommand("earth", {
+--    func = function(name, param)
+--        local player = minetest.get_player_by_name(name)
+--        player:set_physics_override({
+--            gravity = 1.0
+--        })
+--	    func = function(name, param)
+--        return true, "Gravity set to 100%"
+--    end
+--})
